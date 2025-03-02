@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "04c06a6e-ee90-46d2-bfcc-d5bc5f85fbba",
+		"name": "Social Media",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29494934"
+	},
+	"item": [
+		{
+			"name": "Like",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/media/2/like",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"media",
+						"2",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"comment\": \"Great Quality!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/media/3/comment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"media",
+						"3",
+						"comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Media",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/media",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"media"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
